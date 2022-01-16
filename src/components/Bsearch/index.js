@@ -25,7 +25,7 @@ export default function Bsearch(props) {
 							handleInput(inputVal.current.value);
 						}}
 					>
-						<img src={require('./../../assets/images/search.png')} alt="" />
+						<img src={require('@/assets/images/search.png')} alt="" />
 					</button>
 				</div>
 			</div>

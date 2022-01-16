@@ -3,17 +3,17 @@ import React from 'react';
 export default function blockList(props) {
 	const blockList = [
 		{
-			img: './../../../assets/images/block_01.png',
+			img: require('@/assets/images/block_01.png'),
 			name: '',
 			value: '',
 		},
 		{
-			img: './../../../assets/images/block_02.png',
+			img: require('@/assets/images/block_02.png'),
 			name: '',
 			value: '',
 		},
 		{
-			img: './../../../assets/images/block_03.png',
+			img: require('@/assets/images/block_03.png'),
 			name: '',
 			value: '',
 		},
@@ -26,8 +26,7 @@ export default function blockList(props) {
 						return (
 							<div className="block_item clearfix" key={index}>
 								<div className="block_img">
-									{/* <img src={require(item.img)} alt="" /> */}
-									<img src={require('./../../../assets/images/logo-dark.png')} alt="" />
+									<img src={item.img} alt="" />
 								</div>
 								<div className="block_text">
 									<h2>{item.name}</h2>

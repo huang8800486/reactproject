@@ -12,7 +12,7 @@ const HeaderTop = () => {
 		<div className="header_top">
 			<div className="header_wrap clearfix">
 				<Link to="/" className="header_logo">
-					<img src={require('./../../assets/images/logo-dark.png')} alt="" />
+					<img src={require('@/assets/images/logo-dark.png')} alt="" />
 				</Link>
 				<div className="header_navs">
 					<div className="header_big header_right clearfix">

@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.scss';
-import Bsearch from './../../components/Bsearch';
+import Bsearch from '@/components/Bsearch';
 import BlockList from './BlockList';
 export default function Home() {
 	const callback = (value) => {

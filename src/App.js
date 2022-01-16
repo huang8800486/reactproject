@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import HeaderTop from './components/HeaderTop';
 import FooterBottom from './components/FooterBottom';
 import Home from './pages/Home';
@@ -10,8 +10,6 @@ function App() {
 			<div className="container">
 				<Router>
 					<HeaderTop />
-					<Link to="/">Home</Link>
-					<Link to="/blocks">Blocks</Link>
 					<Routes>
 						<Route exact path="/" element={<Home />} />
 						<Route path="/blocks" element={<Blocks />} />
