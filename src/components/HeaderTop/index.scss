@@ -1,0 +1,137 @@
+.header_top {
+	width: 100%;
+	position: relative;
+	margin: auto;
+	z-index: 10;
+	background: #ffffff;
+	.header_wrap {
+		max-width: 1400px;
+		margin: 0 auto;
+		position: relative;
+		padding-left: 310px;
+
+		// logo图片
+		.header_logo {
+			position: absolute;
+			left: 0px;
+			z-index: 3;
+			top: 25px;
+			left: 15px;
+			width: 80px;
+			transition: width 0.3s ease;
+
+			img {
+				width: 100%;
+				display: block;
+			}
+		}
+
+		// 导航
+		.header_navs {
+			width: 100%;
+			position: relative;
+			.header_big {
+				width: 100%;
+				position: relative;
+
+				.navs_list_wrap {
+					width: 100%;
+					position: relative;
+					padding-right: 50px;
+					font-size: 14px;
+
+					.navs_list {
+						width: 100%;
+						position: relative;
+
+						.navs {
+							float: right;
+							position: relative;
+							padding-right: 10px;
+
+							.tit {
+								padding: 14px 0 14px;
+								font-size: 14px;
+								margin-left: 40px;
+								display: block;
+								position: relative;
+								color: #6c757e;
+								line-height: 20px;
+								float: left;
+
+								&.router-link-active,
+								&:hover {
+									color: #1d6fa5;
+								}
+							}
+						}
+
+						.language_list {
+							padding: 14px 0 14px;
+							transition: all 300ms ease;
+							display: block;
+							position: relative;
+							color: #6c757e;
+							line-height: 20px;
+							float: left;
+							font-size: 14px;
+							margin-left: 40px;
+							cursor: pointer;
+
+							h3 {
+								color: #6c757e;
+								position: relative;
+
+								&:hover {
+									color: #1d6fa5;
+
+									&:before {
+										border-color: #1d6fa5 transparent transparent transparent;
+									}
+								}
+
+								&:before {
+									content: '';
+									position: absolute;
+									right: -16px;
+									top: 50%;
+									margin-top: -2px;
+									width: 0;
+									height: 0;
+									font-size: 0;
+									line-height: 0;
+									border-width: 5px;
+									border-style: solid dashed dashed dashed;
+									border-color: #6c757e transparent transparent transparent;
+								}
+							}
+
+							.lang_box {
+								position: absolute;
+								right: -22px;
+								top: 48px;
+								background: #fff;
+								width: 114px;
+								border-radius: 10px;
+								box-shadow: 0px 1px 6px 0px rgb(218, 218, 218);
+								color: #656161;
+								font-weight: normal;
+
+								.lang {
+									display: block;
+									padding: 10px 0;
+									text-align: center;
+
+									&.on,
+									&:hover {
+										color: #1d6fa5;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

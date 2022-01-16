@@ -1,0 +1,64 @@
+.clearfix:after {
+	content: '\20';
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+	overflow: hidden;
+	font-size: 0;
+	line-height: 0;
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+html {
+	color: #1e2022;
+	background: #f8f9fa;
+}
+
+body {
+	background: #f8f9fa;
+	color: #1e2022;
+	width: 100%;
+	min-width: 320px;
+	overflow-x: hidden;
+	font-size: 12px;
+	font-family: -apple-system, Noto Sans, Helvetica Neue, Helvetica, Nimbus Sans L, Arial, Liberation Sans, PingFang SC,
+		Hiragino Sans GB, Noto Sans CJK SC, Source Han Sans SC, Source Han Sans CN, Microsoft YaHei, Wenquanyi Micro Hei,
+		WenQuanYi Zen Hei, ST Heiti, SimHei, WenQuanYi Zen Hei Sharp, sans-serif !important;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.animated {
+	animation-duration: 0.2s;
+	-webkit-animation-duration: 0.2s;
+}
+
+a {
+	color: #6c757e;
+
+	&:hover {
+		color: #1d6fa5;
+	}
+}
+
+.animated.fast {
+	animation-duration: 0.4s;
+}
+
+.inner_content {
+	min-height: 550px;
+}
+
+.common_box {
+	box-shadow: 0 1px 4px #e7eaf3;
+	border: 1px solid #e7eaf3;
+	border-radius: 8px;
+	background: #fff;
+}
